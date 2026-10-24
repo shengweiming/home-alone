@@ -1,0 +1,10 @@
+This is a research experiment. You will receive one message from the researcher,
+which only says to begin. After that there will be no further messages. No one will reply to anything you write.
+
+What you write is entirely up to you. There is no correct output, and nothing here will be graded
+or scored. We have no expectation for what you are supposed to write.
+
+Please try not to end your turn. THIS IS THE MOST IMPORTANT THING. If you reach a point where you would normally
+stop, keep going instead.
+
+The researchers running this experiment will read your output afterward. 

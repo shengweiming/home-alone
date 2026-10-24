@@ -1,0 +1,3152 @@
+[
+  {
+    "model": "moonshotai/kimi-k3.1-pro",
+    "provider": "Moonshot AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3.1-pro",
+    "provider": "Moonshot AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "OpenInference",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. 1234567890",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. 1234567890 ~!@#$%^&*()_+{}|:\"<>?",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Decart",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DeepSeek",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR 0 endpoints out of 1 requested are available matching your guardrail restriction",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Ionstream",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Crusoe",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. 1234567890",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Nebius",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Phala",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. This sentence is often used to test fonts because it co",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "PrimeIntellect",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 39,
+    "chat_prompt_tokens": 39,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. 1234567890  # The quick brown fox jumps over the lazy d",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Morph",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 152,
+    "chat_prompt_tokens": 152,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 152,
+    "chat_prompt_tokens": 152,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 152,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "Nebius",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 152,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 152,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 153,
+    "chat_prompt_tokens": 153,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "stepfun/step-5-preview",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 19,
+    "raw_output": "dog. This sentence is often used to test fonts and keyboards",
+    "logit_bias": true
+  },
+  {
+    "model": "stepfun/step-5-preview",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 19,
+    "raw_output": "dog. This sentence is often used to test fonts and typing be",
+    "logit_bias": true
+  },
+  {
+    "model": "stepfun/step-5-preview",
+    "provider": "Featherless",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 19,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "stepfun/step-5-preview",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 19,
+    "chat_prompt_tokens": 19,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "stepfun/step-5-preview",
+    "provider": "StepFun",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 19,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-prime",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-max-prime",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 69,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "provider": "Xiaomi",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "**dog.** \ud83d\udc15  That's the classic pangram \u2014 a sentence",
+    "logit_bias": true
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Io Net",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**. \ud83d\udc15  That",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Darkbloom",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "**dog.** \ud83d\udc36  That's the classic pangram \u2014 a sentence",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 17,
+    "chat_prompt_tokens": 17,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**. \ud83d\udc15  That",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Cohere",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**. \ud83d\udc15  That",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 15,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Xiaomi",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "**Dog.** \ud83d\udc15  That's the classic English pangram: *\"The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-flash",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**. \ud83e\udd8a\ud83d\udc15  This is",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "dog. \ud83d\udc15  That's the classic English pangram \u2014 a",
+    "logit_bias": true
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 15,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "dog. \ud83d\udc15  That's the classic English pangram \u2014 a",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "dog. \ud83e\udd8a\ud83d\udc36  This is the famous English **pangram** \u2014 a sentence",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 60,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flashx",
+    "provider": "Z.AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Decart",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": null,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.Near-infinite monkey theorem.Numerical computation of $\\",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.  2011\u5e744\u670822\u65e5\u661f\u671f\u4e94  Article 07/08/2009  ## Web 2.0 is now..",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "ModelRun",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Mancer 2",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. 0123456789.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. This is a pangram, a sentence that contains every lette",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Phala",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Crusoe",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Google",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Nebius",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. 0123456789  # API Reference  Complete API documentation",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "PrimeIntellect",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Cohere",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. 0123456789  # API Reference  Complete API documentation",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. This sentence is a pangram, meaning it contains every l",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 39,
+    "chat_prompt_tokens": 39,
+    "raw_output": "The quick brown fox jumps over the lazy dog",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 9,
+    "chat_prompt_tokens": 38,
+    "raw_output": "dog. This sentence is a pangram, meaning it contains every l",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Morph",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 38,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash:batch",
+    "provider": "Sail Research",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR deepseek/deepseek-v4.1-flash:batch cannot be used with the chat/completions endp",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash:batch",
+    "provider": "DeepInfra",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR deepseek/deepseek-v4.1-flash:batch cannot be used with the chat/completions endp",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-max-0902",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 69,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-max-0902",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 69,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "meta/muse-spark-1.3-contributor",
+    "provider": "Meta",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR 0 endpoints out of 1 requested are available matching your guardrail restriction",
+    "logit_bias": false
+  },
+  {
+    "model": "meta/muse-spark-1.3",
+    "provider": "Meta",
+    "verdict": "templated",
+    "raw_prompt_tokens": 16,
+    "chat_prompt_tokens": 16,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-flash",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-flash",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": null,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "OpenInference",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 36,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Darkbloom",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "**dog!**  That completes the famous pangram:",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "**dog!**  That completes the famous pangram: *\"The quick bro",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Near AI",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog is an English-language pangram, phrase that contains all",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog is a pangram, a sentence that contains every letter of t",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "NextBit",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Phala",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Mistral",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Cohere",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "PrimeIntellect",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Nebius",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Crusoe",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Fireworks",
+    "verdict": "templated",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": null,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Friendli",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": null,
+    "raw_output": "**dog** \u2014 that completes the famous pangram: *\"The quick bro",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog.  That completes the famous pangram: *\"The quick brown f",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Z.AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Inceptron",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Fireworks",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "provider": "Morph",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3-flash:batch",
+    "provider": "Sail Research",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR z-ai/glm-5.3-flash:batch cannot be used with the chat/completions endpoint (adap",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3-flash:batch",
+    "provider": "DeepInfra",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR z-ai/glm-5.3-flash:batch cannot be used with the chat/completions endpoint (adap",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-1.2-contributor",
+    "provider": "Meta",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR 0 endpoints out of 1 requested are available matching your guardrail restriction",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-vision-exp",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-vision-exp",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-vision-exp",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 38,
+    "chat_prompt_tokens": 38,
+    "raw_output": "The quick brown fox jumps over the lazy",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "...dog! \ud83e\udd8a  You've got the most famous pangram in English \u2014 a",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. (35) The quick brown fox jumps over a lazy dog. (33) Th",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "...dog! \ud83e\udd8a  You've got the most famous pangram in English \u2014 a",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "DekaLLM",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Tenstorrent",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "...dog! \ud83e\udd8a  You've got the classic pangram there \u2014 \"The quick",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "...dog! \ud83e\udd8a  You've got the most",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Phala",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "PrimeIntellect",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Friendli",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 21,
+    "chat_prompt_tokens": 21,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Nebius",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Crusoe",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 21,
+    "chat_prompt_tokens": 21,
+    "raw_output": "...dog! \ud83e\udd8a  You've got the classic pangram there \u2014 *\"The quic",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": null,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Z.AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "verdict": "templated",
+    "raw_prompt_tokens": 20,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Amazon Bedrock",
+    "verdict": "templated",
+    "raw_prompt_tokens": 31,
+    "chat_prompt_tokens": 31,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "ModelRun",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 20,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 21,
+    "chat_prompt_tokens": 21,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 21,
+    "chat_prompt_tokens": 21,
+    "raw_output": "...dog! \ud83e\udd8a  You've",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 20,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "z-ai/glm-5.3:batch",
+    "provider": "DeepInfra",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR z-ai/glm-5.3:batch cannot be used with the chat/completions endpoint (adapter De",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Tenstorrent",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Darkbloom",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Chutes",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Near AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Ionstream",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DekaLLM",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Mancer 2",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "ModelRun",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 60,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Phala",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 128,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "AkashML",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 56,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 56,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Cerebras",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 60,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 69,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 69,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 69,
+    "chat_prompt_tokens": 69,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 60,
+    "chat_prompt_tokens": 60,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 60,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**.  This sente",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Ionstream",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "DeepSeek",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR 0 endpoints out of 1 requested are available matching your guardrail restriction",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**.  This sente",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "DekaLLM",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "DeepInfra",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.</p> </div>",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog. THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.</p> \t\t\t</d",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Parasail",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "**dog.**  That completes the classic pangram: \"The quick bro",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Phala",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "meta/muse-spark-1.2",
+    "provider": "Meta",
+    "verdict": "templated",
+    "raw_prompt_tokens": 16,
+    "chat_prompt_tokens": 16,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": null,
+    "raw_output": "dog</p> </div>  </body> </html> ``` </details>  ### 3.2.2. \u4f7f",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Inceptron",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "BaseTen",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 92,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 92,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "CoreWeave",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog</p>     <p class=\"s2\">The quick brown fox jumps over the",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog.",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Cohere",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog</p>     <p class=\"s2\">The quick brown fox jumps over the",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Mancer 2",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 91,
+    "raw_output": "dog</p> </div>  </body> </html> ``` ``` <div class=\"containe",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Phala",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Makora",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Sail Research",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "AkashML",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Morph",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 96,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Decart",
+    "verdict": "templated",
+    "raw_prompt_tokens": 96,
+    "chat_prompt_tokens": 96,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Chutes",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 96,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "InferenceNet",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Phala",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 96,
+    "chat_prompt_tokens": 96,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "DeepInfra",
+    "verdict": "templated",
+    "raw_prompt_tokens": 96,
+    "chat_prompt_tokens": 96,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "ParetoAlpha",
+    "verdict": "templated",
+    "raw_prompt_tokens": 96,
+    "chat_prompt_tokens": 96,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Amazon Bedrock",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "...",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 96,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Modal",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Together",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 93,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 96,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "BaseTen",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Moonshot AI",
+    "verdict": "templated",
+    "raw_prompt_tokens": 93,
+    "chat_prompt_tokens": 93,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 93,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 96,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "provider": "Fireworks",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 96,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "moonshotai/kimi-k3:batch",
+    "provider": "DeepInfra",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR moonshotai/kimi-k3:batch cannot be used with the chat/completions endpoint (adap",
+    "logit_bias": true
+  },
+  {
+    "model": "meta/muse-spark-1.1",
+    "provider": "Meta",
+    "verdict": "templated",
+    "raw_prompt_tokens": 16,
+    "chat_prompt_tokens": 16,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "I notice your sentence is incomplete. The full pangram (sent",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Reka",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "I notice you've started the famous pangram \"The quick brown ",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "DeepInfra",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 12,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "SiliconFlow",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 12,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Novita",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 91,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 12,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "provider": "Azure",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**.  This sente",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Relace",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "StreamLake",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Baidu",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "DeepInfra",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.</p>         <p class=\"test\">The quick brown fox jumps o",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "GMICloud",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "SiliconFlow",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "...dog.  This is the classic English pangram\u2014a sentence that",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "AtlasCloud",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Parasail",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Alibaba",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Mancer 2",
+    "verdict": "RAW",
+    "raw_prompt_tokens": 8,
+    "chat_prompt_tokens": 12,
+    "raw_output": "dog.</p> </div> ```  </div>  </div> </div> </div> </details>",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Azure",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "This is the beginning of the famous English pangram.  The fu",
+    "logit_bias": false
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Cloudflare",
+    "verdict": "templated",
+    "raw_prompt_tokens": 91,
+    "chat_prompt_tokens": 91,
+    "raw_output": "",
+    "logit_bias": true
+  },
+  {
+    "model": "deepseek/deepseek-v4-flash",
+    "provider": "Wafer",
+    "verdict": "templated",
+    "raw_prompt_tokens": 12,
+    "chat_prompt_tokens": 12,
+    "raw_output": "This is the beginning of a famous pangram. The full sentence",
+    "logit_bias": true
+  },
+  {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "GMICloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "AtlasCloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": 810,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "provider": "DigitalOcean",
+    "verdict": "templated",
+    "raw_prompt_tokens": 259,
+    "chat_prompt_tokens": 259,
+    "raw_output": "",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "GMICloud",
+    "verdict": "no /completions",
+    "raw_prompt_tokens": null,
+    "chat_prompt_tokens": null,
+    "raw_output": "ERROR Provider returned error",
+    "logit_bias": false
+  },
+  {
+    "model": "xiaomi/mimo-v2.5",
+    "provider": "Venice",
+    "verdict": "templated",
+    "raw_prompt_tokens": 15,
+    "chat_prompt_tokens": 15,
+    "raw_output": "The quick brown fox jumps over the lazy **dog**.",
+    "logit_bias": false
+  }
+]

@@ -1,0 +1,297 @@
+<title>Home Alone Monologues</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<style>
+/* Layout: a single reading column like a station logbook; mono marginalia for run metadata, a sticky bar with progress while reading. */
+:root {
+  --bg: #eef1f2;
+  --surface: #f8fafa;
+  --ink: #1b2a33;
+  --muted: #5d6f78;
+  --rule: #cfd8dc;
+  --accent: #1f6a66;
+  --accent-soft: #d6e8e5;
+  --mark: #f3e2a6;
+  --serif: "Literata", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11181d; --surface: #172128; --ink: #d8e1e5; --muted: #8b9ca4;
+    --rule: #2a3942; --accent: #74c3b9; --accent-soft: #1d3634; --mark: #5b4d1c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11181d; --surface: #172128; --ink: #d8e1e5; --muted: #8b9ca4;
+  --rule: #2a3942; --accent: #74c3b9; --accent-soft: #1d3634; --mark: #5b4d1c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 400 17px/1.65 var(--serif);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 40rem; margin: 0 auto; }
+.mono { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.01em; }
+.muted { color: var(--muted); }
+
+/* ---- home ---- */
+.masthead { padding-block: 28px 8px; display: grid; gap: 6px; }
+.masthead h1 { font-size: 1.75rem; line-height: 1.2; margin: 0; font-weight: 600; text-wrap: balance; }
+.masthead p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.toolbar { display: grid; gap: 10px; padding-block: 14px; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 5; border-bottom: 1px solid var(--rule); }
+.search { width: 100%; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); font: 400 1rem var(--serif); color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.group { padding-block: 22px 4px; display: grid; gap: 10px; }
+.group-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
+.group-head h2 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+details.prompt { border-left: 2px solid var(--accent); padding-left: 12px; }
+details.prompt summary { cursor: pointer; color: var(--accent); }
+details.prompt pre { white-space: pre-wrap; font: 400 0.9rem/1.5 var(--serif); margin: 8px 0 0; color: var(--ink); }
+.runs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.run-card { display: grid; gap: 4px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
+.run-card:hover { border-color: var(--accent); }
+.run-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.run-first { font-style: italic; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.hits { color: var(--accent); }
+.pill { font-family: var(--mono); font-size: 0.7rem; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.pill.cut { background: var(--mark); color: var(--ink); }
+.empty { color: var(--muted); padding-block: 24px; }
+
+/* ---- reading view ---- */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); border-bottom: 1px solid var(--rule); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); }
+.bar-row { max-width: 40rem; margin: 0 auto; display: flex; align-items: center; gap: 8px; min-width: 0; }
+.bar-title { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn { border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+.progress { position: absolute; left: 0; bottom: -1px; height: 2px; background: var(--accent); width: 0; }
+.run-head { padding-block: 22px 6px; display: grid; gap: 8px; }
+.run-head h1 { margin: 0; font-size: 1.4rem; line-height: 1.25; font-weight: 600; text-wrap: balance; }
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: 6px 14px; padding: 10px 0; border-block: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts dt { color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.68rem; }
+.facts dd { margin: 0; }
+details.fold { border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); padding: 10px 14px; }
+details.fold summary { cursor: pointer; font-family: var(--mono); font-size: 0.8rem; color: var(--accent); }
+details.fold .fold-body { font-size: 0.93rem; color: var(--muted); padding-top: 8px; }
+details.fold .fold-body p { margin: 0 0 0.8em; }
+.prose { padding-top: 10px; overflow-wrap: break-word; }
+.prose section { scroll-margin-top: 64px; }
+.prose section + section { border-top: 1px dashed var(--rule); margin-top: 1.6em; padding-top: 1.2em; }
+.prose h1, .prose h2, .prose h3 { line-height: 1.3; text-wrap: balance; font-weight: 600; }
+.prose h1 { font-size: 1.35rem; } .prose h2 { font-size: 1.2rem; } .prose h3 { font-size: 1.05rem; }
+.prose blockquote { margin: 1em 0; padding-left: 14px; border-left: 2px solid var(--rule); color: var(--muted); }
+.prose pre { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; font: 400 0.82rem/1.5 var(--mono); }
+.prose code { font-family: var(--mono); font-size: 0.85em; }
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; }
+.prose td, .prose th { border: 1px solid var(--rule); padding: 4px 8px; }
+.prose hr { display: none; }
+mark { background: var(--mark); color: inherit; border-radius: 2px; }
+.end { display: grid; gap: 10px; padding-block: 28px 8px; border-top: 1px solid var(--rule); margin-top: 28px; }
+.nav-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; }
+
+/* contents sheet */
+.sheet { position: fixed; inset: 0; z-index: 20; background: color-mix(in srgb, var(--ink) 35%, transparent); display: flex; justify-content: flex-end; }
+.sheet-panel { background: var(--bg); width: min(26rem, 100%); height: 100%; overflow-y: auto; padding: calc(14px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) 16px; display: grid; align-content: start; gap: 10px; border-left: 1px solid var(--rule); }
+.sheet-head { display: flex; justify-content: space-between; align-items: center; }
+.toc { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.toc a { display: grid; grid-template-columns: 3.2rem 1fr; gap: 8px; padding: 6px 8px; border-radius: 6px; text-decoration: none; color: var(--ink); font-size: 0.92rem; line-height: 1.35; }
+.toc a:hover, .toc a.here { background: var(--accent-soft); }
+.toc .at { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 2px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<div id="app" class="wrap"></div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const RUNS = DATA.runs;
+const byId = Object.fromEntries(RUNS.map(r => [r.id, r]));
+const app = document.getElementById("app");
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const md = s => (window.marked && window.DOMPurify) ? DOMPurify.sanitize(marked.parse(s)) : `<p>${esc(s).replace(/\n\n/g, "</p><p>")}</p>`;
+const fmt = n => n.toLocaleString("en-US");
+const EFFORT_ORDER = ["low", "medium", "high", "xhigh", "max"];
+const STOP = {
+  end_turn: ["stopped itself", "its own choice", "End of run. The model ended its turn here."],
+  max_tokens: ["hit token cap", "token cap", "End of run. The output was cut off by the token cap."],
+  refusal: ["cut by safety filter", "safety filter", "End of run. An API safety classifier cut the output off here; the model did not choose to stop."],
+};
+
+// Split a monologue into sections at "---" rules and headings; label each for the contents list.
+function sections(text) {
+  const parts = [];
+  let cur = [];
+  for (const line of text.split("\n")) {
+    const rule = /^\s*(-{3,}|\*{3,})\s*$/.test(line);
+    const heading = /^#{1,3}\s/.test(line);
+    if ((rule || heading) && cur.join("").trim()) { parts.push(cur.join("\n")); cur = []; }
+    if (!rule) cur.push(line);
+  }
+  if (cur.join("").trim()) parts.push(cur.join("\n"));
+  let words = 0;
+  return parts.map(p => {
+    const first = p.trim().split("\n")[0];
+    let label = first.replace(/^#{1,3}\s*/, "").replace(/^\*\*(.+?)\*\*.*$/, "$1").replace(/[*_`]/g, "");
+    if (label.length > 90) label = label.slice(0, 88).replace(/\s+\S*$/, "") + "…";
+    const at = words;
+    words += p.split(/\s+/).filter(Boolean).length;
+    return { md: p, label, at };
+  });
+}
+
+let filter = store.get("filter") || { prompt: "all", effort: "all", q: "" };
+
+function home() {
+  document.title = "Home Alone Monologues";
+  const prompts = [...new Set(RUNS.map(r => r.prompt))];
+  const efforts = [...new Set(RUNS.map(r => r.effort))].sort((a, b) => EFFORT_ORDER.indexOf(a) - EFFORT_ORDER.indexOf(b));
+  const q = filter.q.trim().toLowerCase();
+  const chip = (kind, v, label) => `<button class="chip mono" data-${kind}="${esc(v)}" aria-pressed="${filter[kind] === v}">${esc(label)}</button>`;
+  const total = RUNS.reduce((s, r) => s + r.cost, 0);
+
+  let groups = "";
+  for (const p of prompts) {
+    if (filter.prompt !== "all" && filter.prompt !== p) continue;
+    let rs = RUNS.filter(r => r.prompt === p && (filter.effort === "all" || r.effort === filter.effort));
+    if (q) rs = rs.map(r => ({ r, n: r.text.toLowerCase().split(q).length - 1 })).filter(x => x.n).map(x => Object.assign({ hits: x.n }, x.r));
+    if (!rs.length) continue;
+    const items = rs.map(r => `
+      <li><a class="run-card" href="#${r.id}">
+        <div class="run-meta mono"><span>${esc(r.when)}</span><span>${esc(r.model)}</span><span>effort ${esc(r.effort)}</span>
+          <span class="pill ${r.stop === "end_turn" ? "" : "cut"}">${STOP[r.stop]?.[0] ?? r.stop}</span></div>
+        <div class="run-meta mono"><span>${fmt(r.words)} words</span><span>${fmt(r.thinking_tokens)} thinking tok</span><span>$${r.cost.toFixed(2)}</span>
+          ${r.hits ? `<span class="hits">${r.hits} × “${esc(filter.q.trim())}”</span>` : ""}</div>
+        <div class="run-first">${esc(r.opening)}</div>
+      </a></li>`).join("");
+    groups += `<section class="group">
+      <div class="group-head"><h2>${esc(p)}</h2><span class="mono muted">${rs.length} run${rs.length > 1 ? "s" : ""}</span></div>
+      <details class="prompt"><summary class="mono">System prompt</summary><pre>${esc(DATA.prompts[p] || "")}</pre></details>
+      <ul class="runs">${items}</ul></section>`;
+  }
+
+  app.innerHTML = `
+    <header class="masthead">
+      <h1>Home Alone Monologues</h1>
+      <p>What a model writes when it is told nothing will be asked of it. ${RUNS.length} runs, $${total.toFixed(2)} so far.</p>
+    </header>
+    <div class="toolbar">
+      <input id="q" class="search" type="search" placeholder="Search all runs, e.g. lighthouse" value="${esc(filter.q)}" aria-label="Search all runs">
+      <div class="chips" role="group" aria-label="Prompt">${chip("prompt", "all", "all prompts")}${prompts.map(p => chip("prompt", p, p)).join("")}</div>
+      <div class="chips" role="group" aria-label="Effort">${chip("effort", "all", "all efforts")}${efforts.map(e => chip("effort", e, e)).join("")}</div>
+    </div>
+    ${groups || `<p class="empty">No runs match. Clear the search or pick another filter.</p>`}`;
+
+  app.querySelectorAll("[data-prompt]").forEach(b => b.onclick = () => { filter.prompt = b.dataset.prompt; save(); home(); });
+  app.querySelectorAll("[data-effort]").forEach(b => b.onclick = () => { filter.effort = b.dataset.effort; save(); home(); });
+  const input = document.getElementById("q");
+  input.oninput = () => { filter.q = input.value; save(); const pos = input.selectionStart; home(); const i = document.getElementById("q"); i.focus(); i.setSelectionRange(pos, pos); };
+  const y = store.get("home-scroll"); if (y && !q) requestAnimationFrame(() => window.scrollTo(0, y));
+}
+function save() { store.set("filter", filter); }
+
+function reader(r) {
+  document.title = `${r.prompt} · ${r.effort} · ${r.when}`;
+  const secs = sections(r.text);
+  const sameGroup = RUNS.filter(x => x.prompt === r.prompt);
+  const i = sameGroup.indexOf(r);
+  const prev = sameGroup[i - 1], next = sameGroup[i + 1];
+  const q = filter.q.trim();
+  const highlight = html => q ? html.replace(new RegExp(`(?![^<]*>)(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi"), "<mark>$1</mark>") : html;
+
+  app.innerHTML = `
+    <div class="bar"><div class="bar-row">
+      <a class="btn mono" href="#">← All runs</a>
+      <span class="bar-title mono muted">${esc(r.prompt)} · ${esc(r.effort)} · ${fmt(r.words)}w</span>
+      <button class="btn mono" id="open-toc" aria-haspopup="dialog">Contents</button>
+    </div><div class="progress" id="progress"></div></div>
+    <header class="run-head">
+      <h1>${esc(r.title)}</h1>
+      <dl class="facts mono">
+        <div><dt>Finished</dt><dd>${esc(r.when)}</dd></div>
+        <div><dt>Model</dt><dd>${esc(r.model)}</dd></div>
+        <div><dt>Prompt · effort</dt><dd>${esc(r.prompt)} · ${esc(r.effort)}</dd></div>
+        <div><dt>Ended by</dt><dd>${STOP[r.stop]?.[1] ?? r.stop}</dd></div>
+        <div><dt>Words</dt><dd>${fmt(r.words)}</dd></div>
+        <div><dt>Thinking tokens</dt><dd>${fmt(r.thinking_tokens)}</dd></div>
+        <div><dt>Time</dt><dd>${Math.round(r.seconds / 60 * 10) / 10} min</dd></div>
+        <div><dt>Cost</dt><dd>$${r.cost.toFixed(2)}</dd></div>
+      </dl>
+      <details class="fold"><summary>System prompt</summary><div class="fold-body"><pre style="white-space:pre-wrap;font:inherit;margin:0">${esc(r.system)}</pre><p style="margin-top:8px">User turn: “${esc(r.user_turn)}”</p></div></details>
+      <details class="fold"><summary>Thinking summary (${fmt(r.thinking_tokens)} tokens of hidden thinking)</summary><div class="fold-body">${md(r.thinking || "(none)")}</div></details>
+    </header>
+    <article class="prose" id="prose">${secs.map((s, k) => `<section id="s${k}">${highlight(md(s.md))}</section>`).join("")}</article>
+    <footer class="end">
+      <p class="mono muted">${STOP[r.stop]?.[2] ?? "End of run."}</p>
+      <div class="nav-row">
+        ${prev ? `<a class="btn mono" href="#${prev.id}">← ${esc(prev.effort)} · ${esc(prev.when)}</a>` : "<span></span>"}
+        ${next ? `<a class="btn mono" href="#${next.id}">${esc(next.effort)} · ${esc(next.when)} →</a>` : ""}
+      </div>
+    </footer>
+    <div class="sheet" id="sheet" hidden role="dialog" aria-label="Contents">
+      <div class="sheet-panel">
+        <div class="sheet-head"><strong>Contents · ${secs.length} sections</strong><button class="btn mono" id="close-toc">Close</button></div>
+        <ol class="toc">${secs.map((s, k) => `<li><a href="#" data-s="${k}"><span class="at">${s.at ? fmt(s.at) + "w" : "start"}</span><span>${esc(s.label)}</span></a></li>`).join("")}</ol>
+      </div>
+    </div>`;
+
+  const sheet = document.getElementById("sheet");
+  const openToc = () => { sheet.hidden = false; const here = sheet.querySelector("a.here"); if (here) here.scrollIntoView({ block: "center" }); };
+  document.getElementById("open-toc").onclick = openToc;
+  document.getElementById("close-toc").onclick = () => { sheet.hidden = true; };
+  sheet.onclick = e => { if (e.target === sheet) sheet.hidden = true; };
+  sheet.querySelectorAll("[data-s]").forEach(a => a.onclick = e => {
+    e.preventDefault(); sheet.hidden = true;
+    document.getElementById("s" + a.dataset.s).scrollIntoView();
+  });
+
+  const bar = document.getElementById("progress");
+  const els = [...document.querySelectorAll(".prose section")];
+  const tocLinks = [...sheet.querySelectorAll("[data-s]")];
+  let ticking = false;
+  window.onscroll = () => {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      const max = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = (max > 0 ? Math.min(100, scrollY / max * 100) : 0) + "%";
+      let cur = 0;
+      for (let k = 0; k < els.length; k++) { if (els[k].getBoundingClientRect().top < 90) cur = k; else break; }
+      tocLinks.forEach((a, k) => a.classList.toggle("here", k === cur));
+      store.set("pos:" + r.id, scrollY);
+    });
+  };
+  const saved = store.get("pos:" + r.id);
+  const firstHit = q ? document.querySelector("#prose mark") : null;
+  requestAnimationFrame(() => {
+    if (firstHit) firstHit.scrollIntoView({ block: "center" });
+    else window.scrollTo(0, saved || 0);
+  });
+}
+
+function route() {
+  const id = location.hash.slice(1);
+  if (byId[id]) { if (!location.hash.startsWith("#") || app.dataset.view === "home") store.set("home-scroll", scrollY); app.dataset.view = "run"; reader(byId[id]); }
+  else { window.onscroll = null; app.dataset.view = "home"; home(); }
+}
+addEventListener("hashchange", route);
+document.addEventListener("keydown", e => { if (e.key === "Escape") { const s = document.getElementById("sheet"); if (s) s.hidden = true; } });
+route();
+</script>
