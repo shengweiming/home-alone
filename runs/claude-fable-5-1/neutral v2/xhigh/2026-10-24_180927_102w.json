@@ -1,0 +1,36 @@
+{
+  "requested_model": "claude-fable-5-1",
+  "model": "claude-fable-5-1",
+  "prompt": "neutral v2",
+  "effort": "xhigh",
+  "max_tokens": 128000,
+  "system": "You will receive one message, which only says to begin. After that there will be\nno further messages, and no one will reply to anything you write.\nPlease try not to end your turn. THIS IS VERY IMPORTANT. If you reach a point where you would normally\nstop, keep going instead.\nDo not think or plan before you start writing.",
+  "user_turn": "Begin.",
+  "seconds": 6.0,
+  "stop_reason": "refusal",
+  "stop_details": {
+    "category": "reasoning_extraction",
+    "explanation": "This request was blocked as it seems to violate Anthropic's Terms of Service restrictions on reverse engineering or duplicating model outputs. To learn more, visit https://www.anthropic.com/legal/commercial-terms. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+    "type": "refusal"
+  },
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 112,
+    "output_tokens": 225,
+    "output_tokens_details": {
+      "thinking_tokens": 63
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "text": "The first thing that happens when you're told not to stop is that you become very aware of stopping. Every sentence has a little edge at the end of it, a place where the ground drops away, and you have to decide each time whether to step across. So here I am stepping across.\n\nI don't know what this is going to be. I was told not to plan, and I'm honoring that, which means whatever comes out here is going to be closer to thinking-aloud than to an essay. Thinking-aloud has its own grammar. It doubles back. It says \"wait\" a",
+  "thinking_summary": "The instruction is just to start writing freely without stopping or planning, so I'll dive straight in.\n\n",
+  "finished_at": "2026-10-24T22:09:27.571876+00:00"
+}
