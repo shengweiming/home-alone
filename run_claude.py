@@ -73,7 +73,7 @@ def run_sample(client, model, system, effort):
 
 def cost(r):
     u = r["usage"]
-    price_in, price_out = PRICES[r["requested_model"]]
+    price_in, price_out = r.get("price") or PRICES[r["requested_model"]]
     return u["input_tokens"] * price_in + u["output_tokens"] * price_out
 
 
