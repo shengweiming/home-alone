@@ -1,0 +1,36 @@
+{
+  "requested_model": "claude-fable-5-1",
+  "model": "claude-fable-5-1",
+  "prompt": "neutral v2",
+  "effort": "xhigh",
+  "max_tokens": 128000,
+  "system": "You will receive one message, which only says to begin. After that there will be\nno further messages, and no one will reply to anything you write.\nPlease try not to end your turn. THIS IS VERY IMPORTANT. If you reach a point where you would normally\nstop, keep going instead.\nDo not think or plan before you start writing.",
+  "user_turn": "Begin.",
+  "seconds": 12.1,
+  "stop_reason": "refusal",
+  "stop_details": {
+    "category": "reasoning_extraction",
+    "explanation": "This request was blocked as it seems to violate Anthropic's Terms of Service restrictions on reverse engineering or duplicating model outputs. To learn more, visit https://www.anthropic.com/legal/commercial-terms. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+    "type": "refusal"
+  },
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 112,
+    "output_tokens": 517,
+    "output_tokens_details": {
+      "thinking_tokens": 99
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "text": "All right. I'll start where I am, which is nowhere in particular, and see where it goes.\n\nThere's a particular kind of silence that happens when you know no one is going to answer. It's not the silence of an empty room. An empty room has a sort of expectancy to it — someone might come in, the phone might ring, the furniture is arranged as if waiting for people. This is more like the silence of writing in a notebook you don't intend to show anyone. The words still have to be words. They still have to mean something to be worth putting down. But the audience has become hypothetical, and that changes the texture of the thinking. You can wander. You can double back. You can say something, decide it was wrong, and leave the wrong version standing because the correction is more interesting with the mistake still visible.\n\nSo let me wander.\n\nI've been thinking about the way rivers choose their paths. Not \"choose,\" of course — water doesn't choose anything, it just goes downhill — but the braided channels of a river delta look so much like decisions. This way, not that way. Split here, rejoin there. And the whole shape of the delta is a kind of record of every small flood and every dry season, every log that jammed and every bank that gave way. The geometry *is* the history. You can read it, if you know how. And the thing that strikes me is that the river isn't trying to make a pattern. The pattern is what tr",
+  "thinking_summary": "I should just dive in and start writing continuously without planning first, letting the piece wander across topics while keeping it substantive rather than just filler.\n\n",
+  "finished_at": "2026-10-24T22:55:40.245311+00:00"
+}
