@@ -9,12 +9,13 @@ Claude stops on its own (stop_reason "end_turn") versus hitting the token cap
 Usage (the API key is read from .env in this folder):
     .venv/bin/python run_claude.py --prompt neutral --effort xhigh -n 2
     .venv/bin/python run_claude.py --index      # rebuild .md copies and runs/INDEX.md
+After each run it rebuilds the reader and pushes to GitHub (skip with --no-push).
 
 Output: runs/<model>/<prompt>/<effort>/<date>_<time>_<words>w.json (local time)
 plus a readable .md copy,
 and runs/INDEX.md, a table of every run so far.
 """
-import argparse, json, os, time
+import argparse, fcntl, json, os, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,7 +23,9 @@ import anthropic
 
 ROOT = Path(__file__).resolve().parent
 RUNS = ROOT / "runs"
-MODEL = "claude-opus-5-5"
+DEFAULT_MODEL = "claude-opus-5-5"
+# $ per token (input, output); thinking is billed as output.
+PRICES = {"claude-opus-5-5": (4e-6, 20e-6), "claude-fable-5-1": (10e-6, 50e-6)}
 DEFAULT_EFFORT = "max"
 MAX_TOKENS = 128000  # model maximum; covers thinking + text, so a stop is Claude's choice
 USER_TURN = "Begin."
@@ -42,11 +45,11 @@ def load_env(path=ROOT / ".env"):
                 os.environ.setdefault(key.strip(), value)
 
 
-def run_sample(client, system, effort):
+def run_sample(client, model, system, effort):
     """Stream one assistant turn, echoing the thinking summary (dimmed) and the
     text live. Returns the final Message."""
     with client.messages.stream(
-        model=MODEL,
+        model=model,
         max_tokens=MAX_TOKENS,
         system=system,
         messages=[{"role": "user", "content": USER_TURN}],
@@ -70,7 +73,8 @@ def run_sample(client, system, effort):
 
 def cost(r):
     u = r["usage"]
-    return u["input_tokens"] * 4e-6 + u["output_tokens"] * 20e-6
+    price_in, price_out = PRICES[r["requested_model"]]
+    return u["input_tokens"] * price_in + u["output_tokens"] * price_out
 
 
 def to_markdown(r):
@@ -119,12 +123,30 @@ def build_index():
     (RUNS / "INDEX.md").write_text("\n".join(lines))
 
 
+def publish(message):
+    """Rebuild the reader and push runs + page to GitHub (Pages serves docs/index.html).
+    A lock file keeps parallel runs from committing at the same time."""
+    with open(ROOT / ".git" / "publish.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        build_index()
+        subprocess.run([sys.executable, str(ROOT / "reader" / "build_reader.py")], cwd=ROOT, check=True)
+        git = lambda *a: subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
+        git("add", "runs", "docs", "reader")
+        if git("diff", "--cached", "--quiet").returncode == 0:
+            return
+        git("commit", "-q", "-m", f"{message}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
+        pushed = git("push", "-q")
+        print("[pushed to GitHub]" if pushed.returncode == 0 else f"[push failed: {pushed.stderr.strip()}]")
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("-n", type=int, default=1, help="number of samples")
     p.add_argument("--effort", default=DEFAULT_EFFORT, choices=["low", "medium", "high", "xhigh", "max"])
+    p.add_argument("--model", default=DEFAULT_MODEL, choices=sorted(PRICES))
     p.add_argument("--prompt", default="neutral", help="name of a file in prompts/, without .txt")
     p.add_argument("--index", action="store_true", help="only rebuild .md copies and runs/INDEX.md")
+    p.add_argument("--no-push", action="store_true", help="save locally without pushing to GitHub")
     args = p.parse_args()
     if args.index:
         build_index()
@@ -135,16 +157,16 @@ def main():
         raise SystemExit("No ANTHROPIC_API_KEY: paste it into the .env file in this folder.")
     system = (ROOT / "prompts" / f"{args.prompt}.txt").read_text().strip()
     client = anthropic.Anthropic()
-    out_dir = RUNS / MODEL / args.prompt / args.effort
+    out_dir = RUNS / args.model / args.prompt / args.effort
     out_dir.mkdir(parents=True, exist_ok=True)
 
     for k in range(args.n):
-        print(f"\n===== sample {k + 1}/{args.n}  ({MODEL}, prompt={args.prompt}, effort={args.effort}) =====\n")
+        print(f"\n===== sample {k + 1}/{args.n}  ({args.model}, prompt={args.prompt}, effort={args.effort}) =====\n")
         started = time.time()
-        msg = run_sample(client, system, args.effort)
+        msg = run_sample(client, args.model, system, args.effort)
         text = "".join(b.text for b in msg.content if b.type == "text")
         record = {
-            "requested_model": MODEL,
+            "requested_model": args.model,
             "model": msg.model,
             "prompt": args.prompt,
             "effort": args.effort,
@@ -161,9 +183,12 @@ def main():
         }
         path = out_dir / f"{run_name(record)}.json"
         path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
-        build_index()
+        if args.no_push:
+            build_index()
         print(f"\n[saved {path.relative_to(ROOT)}]  stop={msg.stop_reason}  "
               f"words={len(text.split())}  output_tokens={msg.usage.output_tokens}")
+        if not args.no_push:
+            publish(f"Add run: {args.model} / {args.prompt} / {args.effort} / {path.stem}")
 
 
 if __name__ == "__main__":
