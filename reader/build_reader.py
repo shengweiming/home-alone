@@ -28,7 +28,7 @@ def main():
     for f in RUNS.glob("*/*/*/*.json"):
         r = json.loads(f.read_text())
         u = r["usage"]
-        thinking_tokens = (u.get("output_tokens_details") or {}).get("thinking_tokens", 0)
+        thinking_tokens = (u.get("output_tokens_details") or {}).get("thinking_tokens") or 0
         heading = next((m.group(1) for m in re.finditer(r"^#{1,2}\s+(.+)$", r["text"], re.M)), None)
         finished = datetime.fromisoformat(r["finished_at"]).astimezone()
         prompts.setdefault(r["prompt"], r["system"])

@@ -238,7 +238,7 @@ function reader(r) {
         <div><dt>Time</dt><dd>${Math.round(r.seconds / 60 * 10) / 10} min</dd></div>
         <div><dt>Cost</dt><dd>$${r.cost.toFixed(2)}</dd></div>
       </dl>
-      <details class="fold"><summary>System prompt</summary><div class="fold-body"><pre style="white-space:pre-wrap;font:inherit;margin:0">${esc(r.system)}</pre><p style="margin-top:8px">User turn: “${esc(r.user_turn)}”</p></div></details>
+      <details class="fold"><summary>System prompt</summary><div class="fold-body"><pre style="white-space:pre-wrap;font:inherit;margin:0">${esc(r.system)}</pre><p style="margin-top:8px">${r.user_turn ? `User turn: “${esc(r.user_turn)}”` : "No user turn: the model was given only the system prompt and an open assistant turn."}</p></div></details>
       <details class="fold"><summary>Thinking summary (${fmt(r.thinking_tokens)} tokens of hidden thinking)</summary><div class="fold-body">${md(r.thinking || "(none)")}</div></details>
     </header>
     <article class="prose" id="prose">${secs.map((s, k) => `<section id="s${k}">${highlight(md(s.md))}</section>`).join("")}</article>
