@@ -73,6 +73,8 @@ def run_sample(client, model, system, effort):
 
 def cost(r):
     u = r["usage"]
+    if "cost_usd" in r:  # OpenRouter reports the actual charge
+        return r["cost_usd"]
     price_in, price_out = r.get("price") or PRICES[r["requested_model"]]
     return u["input_tokens"] * price_in + u["output_tokens"] * price_out
 
