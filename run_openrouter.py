@@ -34,6 +34,7 @@ def run_sample(key, model, provider, system, effort):
     }
     r = requests.post(URL, headers={"Authorization": f"Bearer {key}"}, json=body, stream=True, timeout=(30, 600))
     r.raise_for_status()
+    r.encoding = "utf-8"  # the stream has no charset header; without this, non-ASCII text comes out garbled
     text, reasoning, info, section = [], [], {}, None
     for line in r.iter_lines(decode_unicode=True):
         if not line or not line.startswith("data: ") or line == "data: [DONE]":
