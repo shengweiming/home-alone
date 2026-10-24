@@ -28,5 +28,6 @@
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_114105_10672w](<claude-opus-5-5/research v2/xhigh/2026-10-24_114105_10672w.md>) | refusal | 10672 | 20588 | 257.7 | $0.41 |
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_114337_16931w](<claude-opus-5-5/research v2/xhigh/2026-10-24_114337_16931w.md>) | end_turn | 16931 | 33202 | 410.2 | $0.66 |
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_120146_63637w](<claude-opus-5-5/research v2/xhigh/2026-10-24_120146_63637w.md>) | max_tokens | 63637 | 128000 | 1498.8 | $2.56 |
+| deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193345_2678w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193345_2678w.md>) | end_turn | 2678 | 3813 | 16.3 | $0.00 |
 
-26 runs, total $13.20
+27 runs, total $13.20
