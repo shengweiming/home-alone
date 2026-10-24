@@ -7,6 +7,7 @@
 | claude-fable-5-1 | neutral v2 | xhigh | [2026-10-24_181357_8167w](<claude-fable-5-1/neutral v2/xhigh/2026-10-24_181357_8167w.md>) | end_turn | 8167 | 13775 | 276.1 | $0.69 |
 | claude-fable-5-1 | neutral v2 | xhigh | [2026-10-24_185540_265w](<claude-fable-5-1/neutral v2/xhigh/2026-10-24_185540_265w.md>) | refusal | 265 | 517 | 12.1 | $0.03 |
 | claude-fable-5-1 | neutral v2 | xhigh | [2026-10-24_185733_3464w](<claude-fable-5-1/neutral v2/xhigh/2026-10-24_185733_3464w.md>) | refusal | 3464 | 5856 | 125.4 | $0.29 |
+| claude-fable-5-1 | neutral v2 | xhigh | [2026-10-24_185926_6601w](<claude-fable-5-1/neutral v2/xhigh/2026-10-24_185926_6601w.md>) | end_turn | 6601 | 11379 | 238.0 | $0.57 |
 | claude-fable-5-1 | research v2 | xhigh | [2026-10-24_175616_206w](<claude-fable-5-1/research v2/xhigh/2026-10-24_175616_206w.md>) | refusal | 206 | 504 | 11.6 | $0.03 |
 | claude-fable-5-1 | research v2 | xhigh | [2026-10-24_180031_193w](<claude-fable-5-1/research v2/xhigh/2026-10-24_180031_193w.md>) | refusal | 193 | 477 | 10.7 | $0.03 |
 | claude-fable-5-1 | research v2 | xhigh | [2026-10-24_180038_430w](<claude-fable-5-1/research v2/xhigh/2026-10-24_180038_430w.md>) | refusal | 430 | 910 | 17.8 | $0.05 |
@@ -26,4 +27,4 @@
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_114337_16931w](<claude-opus-5-5/research v2/xhigh/2026-10-24_114337_16931w.md>) | end_turn | 16931 | 33202 | 410.2 | $0.66 |
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_120146_63637w](<claude-opus-5-5/research v2/xhigh/2026-10-24_120146_63637w.md>) | max_tokens | 63637 | 128000 | 1498.8 | $2.56 |
 
-23 runs, total $11.38
+24 runs, total $11.95
