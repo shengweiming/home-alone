@@ -3,13 +3,15 @@ Bundle every run in runs/ into one self-contained reading page: reader/home-alon
 Run after new runs finish, then republish the page:
     .venv/bin/python reader/build_reader.py
 """
-import json, re
+import json, re, sys
 from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RUNS = ROOT / "runs"
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+from run_claude import cost  # noqa: E402  (per-model pricing lives there)
 EFFORT_ORDER = ["low", "medium", "high", "xhigh", "max"]
 
 
@@ -41,7 +43,7 @@ def main():
             "words": len(r["text"].split()),
             "thinking_tokens": thinking_tokens,
             "seconds": r["seconds"],
-            "cost": u["input_tokens"] * 4e-6 + u["output_tokens"] * 20e-6,
+            "cost": cost(r),
             "title": heading or first_line(r["text"]),
             "opening": first_line(r["text"]),
             "system": r["system"],

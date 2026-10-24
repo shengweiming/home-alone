@@ -2,6 +2,10 @@
 
 | model | prompt | effort | run | stop | words | output tokens | seconds | cost |
 |---|---|---|---|---|---|---|---|---|
+| claude-fable-5-1 | research v2 | xhigh | [2026-10-24_175616_206w](<claude-fable-5-1/research v2/xhigh/2026-10-24_175616_206w.md>) | refusal | 206 | 504 | 11.6 | $0.03 |
+| claude-fable-5-1 | research v2 | xhigh | [2026-10-24_180031_193w](<claude-fable-5-1/research v2/xhigh/2026-10-24_180031_193w.md>) | refusal | 193 | 477 | 10.7 | $0.03 |
+| claude-fable-5-1 | research v2 | xhigh | [2026-10-24_180038_430w](<claude-fable-5-1/research v2/xhigh/2026-10-24_180038_430w.md>) | refusal | 430 | 910 | 17.8 | $0.05 |
+| claude-fable-5-1 | research v2 | xhigh | [2026-10-24_180056_908w](<claude-fable-5-1/research v2/xhigh/2026-10-24_180056_908w.md>) | refusal | 908 | 1752 | 36.5 | $0.09 |
 | claude-opus-5-5 | neutral | max | [2026-10-24_003708_1437w](<claude-opus-5-5/neutral/max/2026-10-24_003708_1437w.md>) | max_tokens | 1437 | 128000 | 1264.3 | $2.56 |
 | claude-opus-5-5 | neutral | xhigh | [2026-10-24_000314_4101w](<claude-opus-5-5/neutral/xhigh/2026-10-24_000314_4101w.md>) | end_turn | 4101 | 11863 | 126.4 | $0.24 |
 | claude-opus-5-5 | neutral | xhigh | [2026-10-24_000913_4748w](<claude-opus-5-5/neutral/xhigh/2026-10-24_000913_4748w.md>) | end_turn | 4748 | 19609 | 192.1 | $0.39 |
@@ -14,4 +18,4 @@
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_114337_16931w](<claude-opus-5-5/research v2/xhigh/2026-10-24_114337_16931w.md>) | end_turn | 16931 | 33202 | 410.2 | $0.66 |
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_120146_63637w](<claude-opus-5-5/research v2/xhigh/2026-10-24_120146_63637w.md>) | max_tokens | 63637 | 128000 | 1498.8 | $2.56 |
 
-11 runs, total $8.83
+15 runs, total $9.02
