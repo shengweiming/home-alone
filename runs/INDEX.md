@@ -30,8 +30,9 @@
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_120146_63637w](<claude-opus-5-5/research v2/xhigh/2026-10-24_120146_63637w.md>) | max_tokens | 63637 | 128000 | 1498.8 | $2.56 |
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193345_2678w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193345_2678w.md>) | end_turn | 2678 | 3813 | 16.3 | $0.00 |
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193504_45301w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193504_45301w.md>) | end_turn | 45301 | 56952 | 95.0 | $0.07 |
+| deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193655_0w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193655_0w.md>) | max_tokens | 0 | 128000 | 206.0 | $0.15 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193352_1509w](<glm-5.3/neutral v2/xhigh/2026-10-24_193352_1509w.md>) | end_turn | 1509 | 1935 | 22.5 | $0.01 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193401_2232w](<glm-5.3/neutral v2/xhigh/2026-10-24_193401_2232w.md>) | end_turn | 2232 | 2788 | 32.5 | $0.01 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193430_4084w](<glm-5.3/neutral v2/xhigh/2026-10-24_193430_4084w.md>) | end_turn | 4084 | 5016 | 61.0 | $0.02 |
 
-31 runs, total $13.31
+32 runs, total $13.47
