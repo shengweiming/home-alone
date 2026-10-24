@@ -31,5 +31,6 @@
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193345_2678w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193345_2678w.md>) | end_turn | 2678 | 3813 | 16.3 | $0.00 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193352_1509w](<glm-5.3/neutral v2/xhigh/2026-10-24_193352_1509w.md>) | end_turn | 1509 | 1935 | 22.5 | $0.01 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193401_2232w](<glm-5.3/neutral v2/xhigh/2026-10-24_193401_2232w.md>) | end_turn | 2232 | 2788 | 32.5 | $0.01 |
+| glm-5.3 | neutral v2 | xhigh | [2026-10-24_193430_4084w](<glm-5.3/neutral v2/xhigh/2026-10-24_193430_4084w.md>) | end_turn | 4084 | 5016 | 61.0 | $0.02 |
 
-29 runs, total $13.22
+30 runs, total $13.25
