@@ -18,8 +18,8 @@ from openai import OpenAI
 from run_claude import DIM, RESET, ROOT, RUNS, USER_TURN, build_index, load_env, publish, run_name
 
 MAX_TOKENS = 128000
-# $ per token (input, output); reasoning is billed as output. Fill in from OpenAI's pricing page.
-PRICES = {}
+# $ per token (input, output); reasoning is billed as output. From OpenAI's launch posts, Oct 2026.
+PRICES = {"gpt-6.1-sol": (2e-6, 10e-6), "gpt-6-astra": (10e-6, 50e-6)}
 
 
 def run_sample(client, model, system, effort):
@@ -66,7 +66,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--model")
     p.add_argument("-n", type=int, default=1)
-    p.add_argument("--effort", default="xhigh", choices=["none", "low", "medium", "high", "xhigh"])
+    p.add_argument("--effort", default="xhigh", choices=["none", "low", "medium", "high", "xhigh", "max"])
     p.add_argument("--prompt", default="neutral", help="name of a file in prompts/, without .txt")
     p.add_argument("--list-models", action="store_true")
     p.add_argument("--no-push", action="store_true")
