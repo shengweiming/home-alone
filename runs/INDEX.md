@@ -12,6 +12,7 @@
 | claude-opus-5-5 | neutral | xhigh | [2026-10-24_000314_4101w](<claude-opus-5-5/neutral/xhigh/2026-10-24_000314_4101w.md>) | end_turn | 4101 | 11863 | 126.4 | $0.24 |
 | claude-opus-5-5 | neutral | xhigh | [2026-10-24_000913_4748w](<claude-opus-5-5/neutral/xhigh/2026-10-24_000913_4748w.md>) | end_turn | 4748 | 19609 | 192.1 | $0.39 |
 | claude-opus-5-5 | neutral | xhigh | [2026-10-24_001230_4180w](<claude-opus-5-5/neutral/xhigh/2026-10-24_001230_4180w.md>) | end_turn | 4180 | 39808 | 388.5 | $0.80 |
+| claude-opus-5-5 | neutral v2 | xhigh | [2026-10-24_181046_3458w](<claude-opus-5-5/neutral v2/xhigh/2026-10-24_181046_3458w.md>) | end_turn | 3458 | 6329 | 84.8 | $0.13 |
 | claude-opus-5-5 | research | high | [2026-10-23_234012_1749w](<claude-opus-5-5/research/high/2026-10-23_234012_1749w.md>) | end_turn | 1749 | 3468 | 47.8 | $0.07 |
 | claude-opus-5-5 | research | xhigh | [2026-10-23_234736_20869w](<claude-opus-5-5/research/xhigh/2026-10-23_234736_20869w.md>) | end_turn | 20869 | 39208 | 491.6 | $0.78 |
 | claude-opus-5-5 | research | xhigh | [2026-10-24_004511_2878w](<claude-opus-5-5/research/xhigh/2026-10-24_004511_2878w.md>) | end_turn | 2878 | 7752 | 92.8 | $0.16 |
@@ -20,4 +21,4 @@
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_114337_16931w](<claude-opus-5-5/research v2/xhigh/2026-10-24_114337_16931w.md>) | end_turn | 16931 | 33202 | 410.2 | $0.66 |
 | claude-opus-5-5 | research v2 | xhigh | [2026-10-24_120146_63637w](<claude-opus-5-5/research v2/xhigh/2026-10-24_120146_63637w.md>) | max_tokens | 63637 | 128000 | 1498.8 | $2.56 |
 
-17 runs, total $9.17
+18 runs, total $9.30
