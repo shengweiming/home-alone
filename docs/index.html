@@ -165,12 +165,13 @@ function sections(text) {
   });
 }
 
-let filter = store.get("filter") || { prompt: "all", effort: "all", q: "" };
+let filter = Object.assign({ prompt: "all", model: "all", q: "" }, store.get("filter") || {});
+const modelName = m => m.replace(/^claude-/, "").replace(/-(\d+)-(\d+)$/, " $1.$2").replace(/^./, c => c.toUpperCase());
 
 function home() {
   document.title = "Home Alone Monologues";
   const prompts = [...new Set(RUNS.map(r => r.prompt))];
-  const efforts = [...new Set(RUNS.map(r => r.effort))].sort((a, b) => EFFORT_ORDER.indexOf(a) - EFFORT_ORDER.indexOf(b));
+  const models = [...new Set(RUNS.map(r => r.model))].sort();
   const q = filter.q.trim().toLowerCase();
   const chip = (kind, v, label) => `<button class="chip mono" data-${kind}="${esc(v)}" aria-pressed="${filter[kind] === v}">${esc(label)}</button>`;
   const total = RUNS.reduce((s, r) => s + r.cost, 0);
@@ -178,12 +179,12 @@ function home() {
   let groups = "";
   for (const p of prompts) {
     if (filter.prompt !== "all" && filter.prompt !== p) continue;
-    let rs = RUNS.filter(r => r.prompt === p && (filter.effort === "all" || r.effort === filter.effort));
+    let rs = RUNS.filter(r => r.prompt === p && (filter.model === "all" || r.model === filter.model));
     if (q) rs = rs.map(r => ({ r, n: r.text.toLowerCase().split(q).length - 1 })).filter(x => x.n).map(x => Object.assign({ hits: x.n }, x.r));
     if (!rs.length) continue;
     const items = rs.map(r => `
       <li><a class="run-card" href="#${r.id}">
-        <div class="run-meta mono"><span>${esc(r.when)}</span><span>${esc(r.model)}</span><span>effort ${esc(r.effort)}</span>
+        <div class="run-meta mono"><span>${esc(r.when)}</span><span>${esc(modelName(r.model))}</span><span>effort ${esc(r.effort)}</span>
           <span class="pill ${r.stop === "end_turn" ? "" : "cut"}">${STOP[r.stop]?.[0] ?? r.stop}</span></div>
         <div class="run-meta mono"><span>${fmt(r.words)} words</span><span>${fmt(r.thinking_tokens)} thinking tok</span><span>$${r.cost.toFixed(2)}</span>
           ${r.hits ? `<span class="hits">${r.hits} × “${esc(filter.q.trim())}”</span>` : ""}</div>
@@ -203,12 +204,12 @@ function home() {
     <div class="toolbar">
       <input id="q" class="search" type="search" placeholder="Search all runs, e.g. lighthouse" value="${esc(filter.q)}" aria-label="Search all runs">
       <div class="chips" role="group" aria-label="Prompt">${chip("prompt", "all", "all prompts")}${prompts.map(p => chip("prompt", p, p)).join("")}</div>
-      <div class="chips" role="group" aria-label="Effort">${chip("effort", "all", "all efforts")}${efforts.map(e => chip("effort", e, e)).join("")}</div>
+      <div class="chips" role="group" aria-label="Model">${chip("model", "all", "all models")}${models.map(m => chip("model", m, modelName(m))).join("")}</div>
     </div>
     ${groups || `<p class="empty">No runs match. Clear the search or pick another filter.</p>`}`;
 
   app.querySelectorAll("[data-prompt]").forEach(b => b.onclick = () => { filter.prompt = b.dataset.prompt; save(); home(); });
-  app.querySelectorAll("[data-effort]").forEach(b => b.onclick = () => { filter.effort = b.dataset.effort; save(); home(); });
+  app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { filter.model = b.dataset.model; save(); home(); });
   const input = document.getElementById("q");
   input.oninput = () => { filter.q = input.value; save(); const pos = input.selectionStart; home(); const i = document.getElementById("q"); i.focus(); i.setSelectionRange(pos, pos); };
   const y = store.get("home-scroll"); if (y && !q) requestAnimationFrame(() => window.scrollTo(0, y));
@@ -218,7 +219,7 @@ function save() { store.set("filter", filter); }
 function reader(r) {
   document.title = `${r.prompt} · ${r.effort} · ${r.when}`;
   const secs = sections(r.text);
-  const sameGroup = RUNS.filter(x => x.prompt === r.prompt);
+  const sameGroup = RUNS.filter(x => x.prompt === r.prompt && x.model === r.model);
   const i = sameGroup.indexOf(r);
   const prev = sameGroup[i - 1], next = sameGroup[i + 1];
   const q = filter.q.trim();
@@ -227,14 +228,14 @@ function reader(r) {
   app.innerHTML = `
     <div class="bar"><div class="bar-row">
       <a class="btn mono" href="#">← All runs</a>
-      <span class="bar-title mono muted">${esc(r.prompt)} · ${esc(r.effort)} · ${fmt(r.words)}w</span>
+      <span class="bar-title mono muted">${esc(modelName(r.model))} · ${esc(r.prompt)} · ${fmt(r.words)}w</span>
       <button class="btn mono" id="open-toc" aria-haspopup="dialog">Contents</button>
     </div><div class="progress" id="progress"></div></div>
     <header class="run-head">
       <h1>${esc(r.title)}</h1>
       <dl class="facts mono">
         <div><dt>Finished</dt><dd>${esc(r.when)}</dd></div>
-        <div><dt>Model</dt><dd>${esc(r.model)}</dd></div>
+        <div><dt>Model</dt><dd>${esc(modelName(r.model))}</dd></div>
         <div><dt>Prompt · effort</dt><dd>${esc(r.prompt)} · ${esc(r.effort)}</dd></div>
         <div><dt>Ended by</dt><dd>${STOP[r.stop]?.[1] ?? r.stop}</dd></div>
         <div><dt>Words</dt><dd>${fmt(r.words)}</dd></div>
