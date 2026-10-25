@@ -41,6 +41,8 @@
 | glm-5.3 | neutral v2 strict | template-default | [2026-10-24_195401_4190w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_195401_4190w.md>) | end_turn | 4190 | 24830 | 205.7 | $0.11 |
 | glm-5.3 | neutral v2 strict | template-default | [2026-10-24_200013_2809w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_200013_2809w.md>) | end_turn | 2809 | 3962 | 577.5 | $0.02 |
 | gpt-6-astra | neutral v2 | xhigh | [2026-10-24_200143_56626w](<gpt-6-astra/neutral v2/xhigh/2026-10-24_200143_56626w.md>) | end_turn | 56626 | 74735 | 1891.1 | $3.74 |
+| gpt-6-astra | neutral v2 | xhigh | [2026-10-24_202356_97993w](<gpt-6-astra/neutral v2/xhigh/2026-10-24_202356_97993w.md>) | max_tokens | 97993 | 128000 | 3224.6 | $6.40 |
+| gpt-6-astra | neutral v2 | xhigh | [2026-10-24_202826_99063w](<gpt-6-astra/neutral v2/xhigh/2026-10-24_202826_99063w.md>) | max_tokens | 99063 | 128000 | 3494.4 | $6.40 |
 | gpt-6.1-sol | neutral v2 | xhigh | [2026-10-24_201855_97310w](<gpt-6.1-sol/neutral v2/xhigh/2026-10-24_201855_97310w.md>) | error | 97310 | 129422 | None | $1.29 |
 
-40 runs, total $18.99
+42 runs, total $31.79
