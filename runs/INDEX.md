@@ -23,6 +23,7 @@
 | claude-opus-5-5 | neutral v2 | xhigh | [2026-10-24_181540_16128w](<claude-opus-5-5/neutral v2/xhigh/2026-10-24_181540_16128w.md>) | end_turn | 16128 | 30275 | 379.2 | $0.61 |
 | claude-opus-5-5 | philosophy dialectic | xhigh | [2026-10-24_233624_0w](<claude-opus-5-5/philosophy dialectic/xhigh/2026-10-24_233624_0w.md>) | refusal | 0 | 0 | 0.8 | $0.00 |
 | claude-opus-5-5 | philosophy dialogue | xhigh | [2026-10-24_234401_8763w](<claude-opus-5-5/philosophy dialogue/xhigh/2026-10-24_234401_8763w.md>) | end_turn | 8763 | 44628 | 457.6 | $0.89 |
+| claude-opus-5-5 | philosophy dialogue | xhigh | [2026-10-24_234519_9858w](<claude-opus-5-5/philosophy dialogue/xhigh/2026-10-24_234519_9858w.md>) | end_turn | 9858 | 52355 | 535.6 | $1.05 |
 | claude-opus-5-5 | philosophy open | xhigh | [2026-10-24_234135_9335w](<claude-opus-5-5/philosophy open/xhigh/2026-10-24_234135_9335w.md>) | end_turn | 9335 | 25857 | 312.0 | $0.52 |
 | claude-opus-5-5 | philosophy open | xhigh | [2026-10-24_234141_10088w](<claude-opus-5-5/philosophy open/xhigh/2026-10-24_234141_10088w.md>) | end_turn | 10088 | 25478 | 317.6 | $0.51 |
 | claude-opus-5-5 | philosophy remarks | xhigh | [2026-10-24_234442_10717w](<claude-opus-5-5/philosophy remarks/xhigh/2026-10-24_234442_10717w.md>) | end_turn | 10717 | 46559 | 499.4 | $0.93 |
@@ -51,4 +52,4 @@
 | gpt-6-astra | neutral v2 | xhigh | [2026-10-24_202826_99063w](<gpt-6-astra/neutral v2/xhigh/2026-10-24_202826_99063w.md>) | max_tokens | 99063 | 128000 | 3494.4 | $6.40 |
 | gpt-6.1-sol | neutral v2 | xhigh | [2026-10-24_201855_97310w](<gpt-6.1-sol/neutral v2/xhigh/2026-10-24_201855_97310w.md>) | error | 97310 | 129422 | None | $1.29 |
 
-48 runs, total $35.59
+49 runs, total $36.64
