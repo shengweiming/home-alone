@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from run_claude import DIM, RESET, ROOT, RUNS, USER_TURN, build_index, load_env, publish, run_name
+from run_claude import DIM, RESET, ROOT, RUNS, USER_TURN, build_index, load_env, publish, run_name, unique_path
 
 URL = "https://openrouter.ai/api/v1/chat/completions"
 MAX_TOKENS = 128000
@@ -114,7 +114,7 @@ def main():
             "thinking_summary": reasoning,  # open models return their full reasoning, not a summary
             "finished_at": datetime.now(timezone.utc).isoformat(),
         }
-        path = out_dir / f"{run_name(record)}.json"
+        path = unique_path(out_dir, record)
         path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
         if args.no_push:
             build_index()

@@ -17,7 +17,7 @@ from pathlib import Path
 import jinja2
 import requests
 
-from run_claude import DIM, RESET, ROOT, RUNS, build_index, load_env, publish, run_name
+from run_claude import DIM, RESET, ROOT, RUNS, build_index, load_env, publish, run_name, unique_path
 
 URL = "https://openrouter.ai/api/v1/completions"
 MAX_TOKENS = 128000
@@ -136,7 +136,7 @@ def main():
             "thinking_summary": reasoning,  # the model's full reasoning, up to </think>
             "finished_at": datetime.now(timezone.utc).isoformat(),
         }
-        path = out_dir / f"{run_name(record)}.json"
+        path = unique_path(out_dir, record)
         path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
         if args.no_push:
             build_index()

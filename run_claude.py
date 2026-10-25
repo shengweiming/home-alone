@@ -97,6 +97,17 @@ def run_name(r):
     return f"{finished:%Y-%m-%d_%H%M%S}_{len(r['text'].split())}w"
 
 
+def unique_path(out_dir, r):
+    """out_dir/<run_name>.json, with a -2, -3… suffix if a run already has that name
+    (parallel runs can finish in the same second with the same word count)."""
+    stem, k = run_name(r), 1
+    path = out_dir / f"{stem}.json"
+    while path.exists():
+        k += 1
+        path = out_dir / f"{stem}-{k}.json"
+    return path
+
+
 def build_index():
     """Name each run date-time-wordcount, rewrite its .md copy, and rebuild runs/INDEX.md."""
     rows = []
@@ -107,7 +118,9 @@ def build_index():
             r["finished_at"] = utc.isoformat()
             f.write_text(json.dumps(r, indent=2, ensure_ascii=False))
         target = f.with_name(run_name(r) + ".json")
-        if target != f:
+        if target != f and not f.stem.startswith(run_name(r) + "-"):  # keep collision suffixes
+            if target.exists():
+                target = unique_path(f.parent, r)
             f.with_suffix(".md").unlink(missing_ok=True)
             f = f.rename(target)
         f.with_suffix(".md").write_text(to_markdown(r))
@@ -183,7 +196,7 @@ def main():
             "thinking_summary": "\n\n".join(b.thinking for b in msg.content if b.type == "thinking"),
             "finished_at": datetime.now(timezone.utc).isoformat(),
         }
-        path = out_dir / f"{run_name(record)}.json"
+        path = unique_path(out_dir, record)
         path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
         if args.no_push:
             build_index()
