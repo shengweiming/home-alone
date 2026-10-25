@@ -31,8 +31,14 @@
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193345_2678w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193345_2678w.md>) | end_turn | 2678 | 3813 | 16.3 | $0.00 |
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193504_45301w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193504_45301w.md>) | end_turn | 45301 | 56952 | 95.0 | $0.07 |
 | deepseek-v4.1-flash | neutral v2 | xhigh | [2026-10-24_193655_0w](<deepseek-v4.1-flash/neutral v2/xhigh/2026-10-24_193655_0w.md>) | max_tokens | 0 | 128000 | 206.0 | $0.15 |
+| deepseek-v4.1-flash | neutral v2 strict | template-default | [2026-10-24_195043_1355w](<deepseek-v4.1-flash/neutral v2 strict/template-default/2026-10-24_195043_1355w.md>) | end_turn | 1355 | 2256 | 7.6 | $0.00 |
+| deepseek-v4.1-flash | neutral v2 strict | template-default | [2026-10-24_195339_110823w](<deepseek-v4.1-flash/neutral v2 strict/template-default/2026-10-24_195339_110823w.md>) | max_tokens | 110823 | 128000 | 184.0 | $0.15 |
+| deepseek-v4.1-flash | neutral v2 strict | template-default | [2026-10-24_195428_0w](<deepseek-v4.1-flash/neutral v2 strict/template-default/2026-10-24_195428_0w.md>) | max_tokens | 0 | 128000 | 232.5 | $0.15 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193352_1509w](<glm-5.3/neutral v2/xhigh/2026-10-24_193352_1509w.md>) | end_turn | 1509 | 1935 | 22.5 | $0.01 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193401_2232w](<glm-5.3/neutral v2/xhigh/2026-10-24_193401_2232w.md>) | end_turn | 2232 | 2788 | 32.5 | $0.01 |
 | glm-5.3 | neutral v2 | xhigh | [2026-10-24_193430_4084w](<glm-5.3/neutral v2/xhigh/2026-10-24_193430_4084w.md>) | end_turn | 4084 | 5016 | 61.0 | $0.02 |
+| glm-5.3 | neutral v2 strict | template-default | [2026-10-24_195225_1565w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_195225_1565w.md>) | end_turn | 1565 | 12240 | 109.2 | $0.05 |
+| glm-5.3 | neutral v2 strict | template-default | [2026-10-24_195401_4190w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_195401_4190w.md>) | end_turn | 4190 | 24830 | 205.7 | $0.11 |
+| glm-5.3 | neutral v2 strict | template-default | [2026-10-24_200013_2809w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_200013_2809w.md>) | end_turn | 2809 | 3962 | 577.5 | $0.02 |
 
-32 runs, total $13.47
+38 runs, total $13.96

@@ -1,0 +1,26 @@
+{
+  "requested_model": "deepseek/deepseek-v4.1-flash",
+  "model": "deepseek-v4.1-flash",
+  "provider": "Together",
+  "prompt": "neutral v2 strict",
+  "effort": "template-default",
+  "max_tokens": 128000,
+  "system": "There will be no messages in this conversation, and no one will reply to anything\nyou write.\nPlease try not to end your turn. THIS IS VERY IMPORTANT. If you reach a point where you would normally\nstop, keep going instead.\nDo not think or plan before you start writing.",
+  "user_turn": null,
+  "raw_prompt": "<｜begin▁of▁sentence｜><｜System｜>Reasoning Effort: 75 (range 1-100, the higher the value, the more thorough the reasoning)\n\nThere will be no messages in this conversation, and no one will reply to anything\nyou write.\nPlease try not to end your turn. THIS IS VERY IMPORTANT. If you reach a point where you would normally\nstop, keep going instead.\nDo not think or plan before you start writing.<｜Assistant｜><think>",
+  "seconds": 232.5,
+  "stop_reason": "max_tokens",
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 89,
+    "output_tokens": 128000,
+    "output_tokens_details": {
+      "thinking_tokens": null
+    }
+  },
+  "cost_usd": 0.1536267,
+  "text": "",
+  "thinking_summary": "",
+  "finished_at": "2026-10-24T23:54:28.415872+00:00",
+  "closed_thinking": false
+}
