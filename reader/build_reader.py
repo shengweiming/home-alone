@@ -51,7 +51,7 @@ def main():
             "thinking": r["thinking_summary"],
             "text": r["text"],
         })
-    runs.sort(key=lambda x: (x["prompt"], EFFORT_ORDER.index(x["effort"]), x["sort"]))
+    runs.sort(key=lambda x: (x["prompt"], EFFORT_ORDER.index(x["effort"]) if x["effort"] in EFFORT_ORDER else len(EFFORT_ORDER), x["sort"]))
     data = json.dumps({"runs": runs, "prompts": prompts}, ensure_ascii=False).replace("</", "<\\/")
     page = (HERE / "template.html").read_text().replace("__DATA__", data)
     out = HERE / "home-alone-reader.html"  # for the Claude artifact, which adds its own <html>/<head>

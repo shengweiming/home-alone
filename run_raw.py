@@ -63,7 +63,8 @@ def run_sample(key, model, provider, prompt):
         if chunk.get("usage"):
             info["usage"] = chunk["usage"]
         for choice in chunk.get("choices", []):
-            piece = choice.get("text") or ""
+            # Some providers move <think> content out of "text" into a "reasoning" field.
+            piece = (choice.get("reasoning") or "") + (choice.get("text") or "")
             out.append(piece)
             if not in_response and THINK_END in "".join(out[-3:]):
                 in_response = True
@@ -74,7 +75,10 @@ def run_sample(key, model, provider, prompt):
     print()
     full = "".join(out)
     reasoning, sep, text = full.partition(THINK_END)
-    return (text.strip(), reasoning.strip(), info) if sep else ("", full.strip(), info)
+    info["closed_thinking"] = bool(sep)
+    # With no user turn, a model may write its whole monologue inside the thinking block and
+    # never close it; then everything it wrote is the monologue.
+    return (text.strip(), reasoning.strip(), info) if sep else (full.strip(), "", info)
 
 
 def main():
@@ -118,6 +122,7 @@ def main():
             "system": system,
             "user_turn": None,
             "raw_prompt": raw,
+            "closed_thinking": info["closed_thinking"],  # False: the whole monologue was written inside <think>, never closed
             "seconds": round(time.time() - started, 1),
             "stop_reason": stop,
             "stop_details": info.get("error"),
