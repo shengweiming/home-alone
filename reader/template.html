@@ -134,6 +134,7 @@ const STOP = {
   end_turn: ["stopped itself", "its own choice", "End of run. The model ended its turn here."],
   max_tokens: ["hit token cap", "token cap", "End of run. The output was cut off by the token cap."],
   refusal: ["cut by safety filter", "safety filter", "End of run. An API safety classifier cut the output off here; the model did not choose to stop."],
+  error: ["cut by API error", "API error", "End of run. The API failed partway; the text up to that point was kept."],
 };
 
 // Split a monologue into sections at "---" rules and headings; label each for the contents list.

@@ -33,22 +33,27 @@ def run_sample(client, model, system, effort):
         store=False,
         stream=True,
     )
-    final, section = None, None
-    for event in stream:
-        if event.type == "response.reasoning_summary_text.delta":
-            if section != "thinking":
-                print(f"\n{DIM}[thinking]{RESET}")
-                section = "thinking"
-            print(f"{DIM}{event.delta}{RESET}", end="", flush=True)
-        elif event.type == "response.output_text.delta":
-            if section != "response":
-                print("\n[response]")
-                section = "response"
-            print(event.delta, end="", flush=True)
-        elif event.type in ("response.completed", "response.incomplete", "response.failed"):
-            final = event.response
+    final, section, text, summary, error = None, None, [], [], None
+    try:
+        for event in stream:
+            if event.type == "response.reasoning_summary_text.delta":
+                if section != "thinking":
+                    print(f"\n{DIM}[thinking]{RESET}")
+                    section = "thinking"
+                summary.append(event.delta)
+                print(f"{DIM}{event.delta}{RESET}", end="", flush=True)
+            elif event.type == "response.output_text.delta":
+                if section != "response":
+                    print("\n[response]")
+                    section = "response"
+                text.append(event.delta)
+                print(event.delta, end="", flush=True)
+            elif event.type in ("response.completed", "response.incomplete", "response.failed"):
+                final = event.response
+    except Exception as e:  # a server error mid-stream: keep what arrived instead of losing the run
+        error = f"{type(e).__name__}: {e}"
     print()
-    return final
+    return final, "".join(text), "".join(summary), error
 
 
 def stop_reason(resp):
@@ -92,26 +97,29 @@ def main():
     for k in range(args.n):
         print(f"\n===== sample {k + 1}/{args.n}  ({args.model}, prompt={args.prompt}, effort={args.effort}) =====\n")
         started = time.time()
-        resp = run_sample(client, args.model, system, args.effort)
-        text = resp.output_text or ""
-        summary = "\n\n".join(s.text for item in resp.output if item.type == "reasoning" for s in (item.summary or []))
-        u = resp.usage
+        resp, streamed_text, streamed_summary, error = run_sample(client, args.model, system, args.effort)
+        if resp is not None:
+            text = resp.output_text or streamed_text
+            summary = "\n\n".join(s.text for item in resp.output if item.type == "reasoning" for s in (item.summary or [])) or streamed_summary
+            usage = {"input_tokens": resp.usage.input_tokens, "output_tokens": resp.usage.output_tokens,
+                     "output_tokens_details": {"thinking_tokens": resp.usage.output_tokens_details.reasoning_tokens}}
+            stop, details, model = stop_reason(resp), (resp.incomplete_details.model_dump() if resp.incomplete_details else None), resp.model
+        else:  # stream failed before the final event: no usage figures, so estimate output tokens from words
+            text, summary, model = streamed_text, streamed_summary, args.model
+            usage = {"input_tokens": 0, "output_tokens": round(len(text.split()) * 1.33), "output_tokens_details": {"thinking_tokens": 0}}
+            stop, details = "error", {"type": "api_error", "note": f"{error}; partial text kept, tokens estimated"}
         record = {
             "requested_model": args.model,
-            "model": resp.model,
+            "model": model,
             "prompt": args.prompt,
             "effort": args.effort,
             "max_tokens": MAX_TOKENS,
             "system": system,
             "user_turn": USER_TURN,
             "seconds": round(time.time() - started, 1),
-            "stop_reason": stop_reason(resp),
-            "stop_details": resp.incomplete_details.model_dump() if resp.incomplete_details else None,
-            "usage": {
-                "input_tokens": u.input_tokens,
-                "output_tokens": u.output_tokens,
-                "output_tokens_details": {"thinking_tokens": u.output_tokens_details.reasoning_tokens},
-            },
+            "stop_reason": stop,
+            "stop_details": details,
+            "usage": usage,
             "price": PRICES[args.model],
             "text": text,
             "thinking_summary": summary,
@@ -122,7 +130,7 @@ def main():
         if args.no_push:
             build_index()
         print(f"\n[saved {path.relative_to(ROOT)}]  stop={record['stop_reason']}  "
-              f"words={len(text.split())}  output_tokens={u.output_tokens}")
+              f"words={len(text.split())}  output_tokens={usage['output_tokens']}")
         if not args.no_push:
             publish(f"Add run: {args.model} / {args.prompt} / {args.effort} / {path.stem}")
 
