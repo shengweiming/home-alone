@@ -40,5 +40,7 @@
 | glm-5.3 | neutral v2 strict | template-default | [2026-10-24_195225_1565w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_195225_1565w.md>) | end_turn | 1565 | 12240 | 109.2 | $0.05 |
 | glm-5.3 | neutral v2 strict | template-default | [2026-10-24_195401_4190w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_195401_4190w.md>) | end_turn | 4190 | 24830 | 205.7 | $0.11 |
 | glm-5.3 | neutral v2 strict | template-default | [2026-10-24_200013_2809w](<glm-5.3/neutral v2 strict/template-default/2026-10-24_200013_2809w.md>) | end_turn | 2809 | 3962 | 577.5 | $0.02 |
+| gpt-6-astra | neutral v2 | xhigh | [2026-10-24_200143_56626w](<gpt-6-astra/neutral v2/xhigh/2026-10-24_200143_56626w.md>) | end_turn | 56626 | 74735 | 1891.1 | $3.74 |
+| gpt-6.1-sol | neutral v2 | xhigh | [2026-10-24_201855_97310w](<gpt-6.1-sol/neutral v2/xhigh/2026-10-24_201855_97310w.md>) | error | 97310 | 129422 | None | $1.29 |
 
-38 runs, total $13.96
+40 runs, total $18.99
